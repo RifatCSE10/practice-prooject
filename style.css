@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  scroll-behavior: smooth;
+}
+
 .header {
   height: 100vh;
   width: 100%;
@@ -153,16 +157,30 @@ span {
 
 /* items section start */
 
+
 .items{
   height: 100vh;
   width: 100%;
   background: #b3bbf547;
 }
 
+.items h1{
+  text-align: center;
+  position: relative;
+  top: 4%;
+  font-size: 38px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.76);
+
+}
 .coffee_items{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 90%;
   padding: 10px;
   position: relative;
@@ -226,4 +244,8 @@ img:hover{
 .product_text p{
   font-size: 20px;
 
+}
+
+.mrzn{
+  margin-top: 4%;
 }
