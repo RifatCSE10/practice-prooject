@@ -39,31 +39,29 @@ nav ul{
     justify-content: space-around;
 }
 
-nav ul li{
-    display: inline-block;
-}
 
 nav ul li a{
-   text-decoration: none;
-   color: rgba(255, 255, 255, 0.788);
-   font-size: 18px;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   padding: 9px,26px;
-
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    position: relative;
 }
 
-/* nav ul li a::after{
-    content: '';
-    position: relative;
+nav ul li a::after{
+    content: "";
     height: 3px;
-    width: 10%;
-    background: tomato;
-    right: 25px;
-    top: 63px;
-   
- }
+    width: 0;
+    background-color: tomato;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: 0.5s all;
+}
 
 nav ul li a:hover::after{
-    width: 8%;
-} */
+    width: 100%;
+}
+
